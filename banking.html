@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>banking site</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+</head>
+<body class="container">
+    <header>
+        <h1 class="my-5">Let's Get Some <span class="text-warning">Mooooney</span></h1>
+    </header>
+
+
+    <main>
+        <section>
+            <div class="row gx-5 mx-auto">
+                <div class="text-white col-6 col-sm-12 col-md-3 col-lg-3 bg-warning p-4 border rounded shadow-lg">
+                    <h3>Deposit</h3>
+                    <h2>$<span id="deposit-output">00</span></h2>
+                </div>
+                <div class="text-white col-6 col-sm-12 col-md-3 col-lg-3 bg-warning p-4 border rounded shadow-lg">
+                    <h3>Withdraw</h3>
+                    <h2>$ <span id="withdraw-output">00</span> </h2>
+                </div>
+                <div class="text-white col-6 col-sm-12 col-md-3 col-lg-3 bg-warning p-4 border rounded shadow-lg">
+                    <h3 >Balance</h3>
+                    <h2>$ <span id="balance">1240</span> </h2>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-5">
+            <div class="row">
+                <div class="col-4 bg-warning p-3 me-2">
+                    <h3>Deposit</h3>
+                    <input id="deposit-input" class="w-75 p-1 border rounded" type="text" placeholder="$Amount You want to deposit">
+                    <br>
+                    <button id="deposit-btn" class="btn btn-dark mt-3">Deposit</button>
+                </div>
+                <div class="col-4 bg-warning p-3">
+                    <h3>Withdraw</h3>
+                    <input id="withdraw-input" class="w-75 p-1 border rounded" type="text" placeholder="$Amount You want to withdraw">
+                    <button id="withdraw-btn" class="btn btn-dark mt-3">Withdraw</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="banking.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+</body>
+</html>
